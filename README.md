@@ -5,6 +5,8 @@ The framework uses two key components: (1) Visual Retrieval-Augmented Generation
 To classify a target image, AiSciVision first retrieves the most similar positive and negative labeled images as context for the LMM. 
 Then the LMM agent actively selects and applies tools to manipulate and inspect the target image over multiple rounds, refining its analysis before making a final prediction.
 
+**Link to AiSciVision paper: https://arxiv.org/abs/2410.21480**
+
 ## Table of Contents
 - [Installation](#installation)
 - [Running Experiments](#running-experiments)
@@ -17,6 +19,7 @@ Then the LMM agent actively selects and applies tools to manipulate and inspect 
   - [Baseline Implementations](#baseline-implementations)
   - [Utilities](#utilities)
 - [License](#license)
+- [Citation](#citation)
 
 ## Installation
 
@@ -104,3 +107,17 @@ The included `Makefile` provides utilities for maintaining code quality:
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Citation
+
+Please use the following citation if you find our work useful.
+
+```
+@article{hogan2024aiscivision,
+  title={{AiSciVision: A Framework for Specializing Large Multimodal Models in Scientific Image Classification}}, 
+  author={Brendan Hogan and Anmol Kabra and Felipe Siqueira Pacheco and Laura Greenstreet and Joshua Fan and Aaron Ferber and Marta Ummus and Alecsander Brito and Olivia Graham and Lillian Aoki and Drew Harvell and Alex Flecker and Carla Gomes},
+  year={2024},
+  journal={arXiv preprint arXiv:2410.21480},
+  url={https://arxiv.org/abs/2410.21480}, 
+}
+```
